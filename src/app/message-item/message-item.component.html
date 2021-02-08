@@ -1,0 +1,6 @@
+<div class="message-sender">
+    <label>{{message.sender}}</label>
+</div>
+<div>
+    <div #slot class="message-content" [innerHTML]='message.render()'></div>
+</div>

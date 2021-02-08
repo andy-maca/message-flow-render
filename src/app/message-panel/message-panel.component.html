@@ -1,0 +1,6 @@
+
+<app-message-item *ngFor='let item of messages'
+ [message]='item'
+ [class.system-message]='item.isSystemMessage'
+ [class.self-message]='item.sender===currentUser'>
+</app-message-item>
